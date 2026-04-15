@@ -5,9 +5,9 @@
   box-sizing: border-box;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ul, ol {
-  margin: 0;
-  padding: 0;
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, a {
+  margin: 0%;
+  padding: 0%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -19,3 +19,127 @@ button, input, textarea {
   font: inherit;
 }
 
+header{
+  width: 100%;
+  height: 150px;
+  background-color: #0b91eb;
+  box-shadow: #140909 0px 4px 8px, #000000 0px 6px 20px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+header div img {
+  width: 100px;
+  height: 100px;
+}
+
+header div h1 {
+  font-size: 36px;
+  margin-left: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-animation-smoothing: antialiased;
+  will-change: transform;
+  /* A transição deve ficar aqui para afetar a ida e a volta */
+  transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+header div h1:hover {
+  transform: scale(1.05); 
+  color: rgb(215, 215, 250);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ol {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+nav ol li {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+nav ol li:hover{
+  transform: scale(1.10); /* Aumenta a imagem em 10% */
+  transition: transform 0.3s ease;
+}
+
+nav ol li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ol img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+nav ol img:hover {
+    cursor: pointer;
+    transform: scale(1.25); /* Aumenta a imagem em 25% */
+    transition: transform 0.3s ease;
+}
+
+main {
+  padding: 80px 60px;
+  background-color: #e0a8a8;
+}
+
+main h2 {
+  font-size: 28px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-style: italic;
+  font-weight: 600;
+}
+
+main div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.cards-products {
+  height: 600px;
+  width: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: aquamarine;
+}
+
+.cards-products img{
+  width: 450px;
+  height: 300px;
+  object-fit: fill;
+}
+ /* consertar o tamanho das imagens para que fiquem todas iguais, e não fiquem esticadas ou achatadas 
+    criar uma div para as imagens, e colocar as imagens dentro dessa div, e dar um tamanho fixo para a div,
+     e colocar as imagens com width: 100% e height: 100%, e object-fit: cover; para que as imagens fiquem cortadas e não fiquem esticadas ou achatadas
+ */
